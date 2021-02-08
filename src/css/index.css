@@ -1,0 +1,6 @@
+#first_section {
+    background-image: url(/src/img/background.png);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 50rem;
+}
