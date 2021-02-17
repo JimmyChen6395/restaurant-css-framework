@@ -1,6 +1,51 @@
+body {
+    font-family: 'Cabin', sans-serif;
+}
+
 #first_section {
     background-image: url(/src/img/background.png);
     background-size: cover;
     background-position: center;
-    padding-bottom: 50rem;
+    min-height: 90vh;
 }
+
+.mafontsize {
+    font-size: 4rem;
+}
+
+iframe {
+    border-radius: 5%;
+}
+
+
+/* pagination */
+
+.style li a {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+}
+
+.button:hover {
+    background-color: rgb(96, 170, 96);
+    transition: 0.5s;
+    border: none;
+}
+
+.button i {
+    color: #dc3545;
+    border: none;
+}
+
+.button:hover>i {
+    color: white;
+    transition: 0.5s;
+}
+
+
+/* Form */
+
+
+/* .m-p-form {
+    padding: 0 20rem;
+} */

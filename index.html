@@ -7,81 +7,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="/src/css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&display=swap" rel="stylesheet">
     <title>Mario's pizza | Home</title>
 </head>
 
 <body>
+    <!-- NAVBAR -->
+
     <header>
-        <!-- <h1>
-            <img src="/src/img/icons8-super-mario-50.png" alt="Mario"> Mario's pizza
-        </h1> -->
-
-        <nav class="navbar navbar-light bg-danger p-4">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-danger">
             <div class="container-fluid">
+                <img class="me-2" src="/src/img/icons8-super-mario-50.png" alt="Mario">
                 <a class="navbar-brand" href="#">
-                    <img src="/src/img/icons8-super-mario-50.png" alt="" width="60" height="54" class="d-inline-block align-top"> Mario's pizza
+                    <h1 class="me-3">Mario's pizza</h1>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
 
-
-
-
-                <div class="collapse navbar-collapse nav justify-content-end" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
+                <div class="collapse navbar-collapse" id="navbarsExample03">
+                    <ul class="navbar-nav me-auto mb-2 mb-sm-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link active" aria-current="page" href="/src/pages/carte.html">Carte</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
+                            <a class="nav-link active" aria-current="page" href="/src/pages/Photo.html">Photo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/src/pages/Restaurants.html">Restaurants</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/src/pages/Contact.html">Contact</a>
                         </li>
                     </ul>
+                    <form>
+                        <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                    </form>
                 </div>
             </div>
         </nav>
-        <!-- <nav>
-            <ul class="nav justify-content-end">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Acceuil</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Carte</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Photo</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Restaurants</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
-        </nav> -->
     </header>
 
-    <section id="first_section">
-        <div>
-            <h2>Toutes la spendeur de la pizza depuis 1985</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia corrupti voluptatum quos voluptatibus temporibus accusamus velit iste reprehenderit alias. Totam voluptatibus voluptatum in inventore veritatis ipsa ut, vero fuga voluptates.</p>
+
+    <!-- SECTION 1 Texte -->
+
+    <section id="first_section" class="container-fluid align-self-center p-5">
+        <div class="text_home p-5 w-75 mx-auto m-5">
+            <h2 class="p-3 text-center text-warning mafontsize">Toutes la spendeur de la pizza depuis 1985</h2>
+            <p class="p-3 text-center text-light fs-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia corrupti voluptatum quos voluptatibus temporibus accusamus velit iste reprehenderit alias. Totam voluptatibus voluptatum in inventore veritatis ipsa ut, vero fuga voluptates. Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Dolore non voluptas tenetur porro. Est nam odio pariatur? Inventore cupiditate repudiandae accusamus suscipit quasi iste tempora exercitationem reprehenderit cum mollitia! Doloribus? Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Dolor est laudantium ex sapiente dolores quidem sit. Consequuntur tempore cupiditate dignissimos assumenda quia odit, voluptas, dolorem saepe a deleniti quod eveniet!</p>
+            <button type="button" class="btn btn-danger mx-auto d-block p-4">Learn more</button>
         </div>
     </section>
 
-    <section>
-        <h2>Vidéo</h2>
-        <iframe width="1280" height="720" src="https://www.youtube.com/embed/WShCN-AYHqA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- SECTION 2 Vidéo -->
+
+    <section id="second_section" class="bg-dark">
+        <h2 class="p-5 text-center text-light ">Vidéo</h2>
+        <iframe class="w-75 mt-3 mx-auto d-block" width="1280" height="720" src="https://www.youtube.com/embed/WShCN-AYHqA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
 
-    <section>
-        <h2>News</h2>
+
+    <!-- SECTION 3 News -->
+
+    <section id="third_section" class="bg-dark">
+        <h2 class="p-5 text-center text-light">News</h2>
+
+        <!-- <div class="d-flex justify-content-center justify-content-evenly p-5"> -->
+        <div class="container">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="offset-xl-0 col-xl-6 col-md-12">
+                        <div class="card mb-5 mt-5">
+                            <h5 class="card-header">Recherche pizzaiolo</h5>
+                            <div class="card-body">
+                                <h5 class="card-title">CDD 3 mois</h5>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus eveniet architecto sed possimus, quos nesciunt molestias tenetur laborum totam reprehenderit debitis voluptate corrupti cum vel aliquam exercitationem. Rerum,
+                                    vitae corrupti.</p>
+                                <a href="#" class="btn btn-primary">Contact</a>
+                            </div>
+
+
+                            <div class="card">
+                                <h5 class="card-header">Promo</h5>
+                                <div class="card-body">
+                                    <h5 class="card-title">1 + 1 gratuit</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, doloribus. Quia nam rem aliquam ea unde dolores quos modi qui? Natus at praesentium in assumenda. Repellat eos tempore nulla animi.</p>
+                                    <a href="#" class="btn btn-primary">Contact</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="offset-xl-2 col-xl-4 col-md-12">
+                        <div class="card mb-5">
+                            <img src="/src/img/img2.jpg" class="card-img-top">
+                            <h5 class="card-body">Livraison</h5>
+                            <h6 class="card-title ms-3">Card subtitle</h6>
+                            <p class="card-text ms-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima aut dolores ipsam error similique ratione quis non perspiciatis reiciendis, optio quaerat, possimus reprehenderit aperiam corrupti doloribus delectus, saepe in.
+                                Cum?
+                            </p>
+                            <a href="/src/pages/carte.html" class="btn btn-primary">Carte</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
 
-    <footer>
-        Copyright © 2021 - Mario's pizza
+    <footer class="bg-danger text-center p-3">
+        <p class="text-light">Copyright © 1985 - Mario's pizza</p>
     </footer>
 
 
@@ -90,9 +129,9 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js " integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js " integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js " integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj " crossorigin="anonymous "></script>
 </body>
 
 </html>
